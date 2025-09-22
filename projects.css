@@ -44,3 +44,10 @@
     border: none;
     margin-top: 1rem;
 }
+
+/* Desktop: 3 cards per row */
+@media screen and (min-width: 1024px) {
+    .projects-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
