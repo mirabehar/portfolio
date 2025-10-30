@@ -45,17 +45,15 @@ img {
   display: block;
 }
 
-/* .pdf-embed { TODO: Delete 
-  width: 64%;
-  height: 80vh;
-  border: none;
-} 
-
 @media (max-width: 768px) {
-  .pdf-embed {
-    height: 60vh;
+  .container{
+    grid-template-columns: 1fr;
   }
-}*/
+
+  .container img {
+    margin: 0 auto; 
+  }
+}
 
 /* ----------------------------- */
 /* ----- Typography ----- */
