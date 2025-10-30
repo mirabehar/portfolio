@@ -27,19 +27,13 @@ body {
 /* ----------------------------- */
 
 .container {
-  max-width: 1100px;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 2rem; 
+  max-width: 1400px;
   margin: 0 auto;
-  /* horizontally centered */
   padding: 0 2rem;
-  text-align: center;
-}
-
-p {
-  margin: 0 auto 1.6rem;
-  max-width: 60ch;
-  /* limits line length */
-  text-align: center;
-}
+} 
 
 section {
   padding: 6rem 0;
@@ -51,21 +45,17 @@ img {
   display: block;
 }
 
-.pdf-embed {
+/* .pdf-embed { TODO: Delete 
   width: 64%;
   height: 80vh;
   border: none;
-}
+} 
 
 @media (max-width: 768px) {
   .pdf-embed {
     height: 60vh;
   }
-}
-
-.project {
-  margin-bottom: 5rem;
-}
+}*/
 
 /* ----------------------------- */
 /* ----- Typography ----- */
@@ -94,9 +84,20 @@ h3 {
 }
 
 p {
-  margin-bottom: 1.6rem;
-  max-width: 60ch;
+  margin: 0 auto 1.6rem;
+  max-width: 60ch; 
+  text-align: center;
 }
+
+.container h1,
+.container h2,
+.container h3,
+.container p {
+  margin: 0 auto 1.6rem;
+  max-width: min(600px, 90vw);
+  text-align: left;
+}
+
 
 /* ----------------------------- */
 /* ----- Links & Buttons ----- */
@@ -134,7 +135,7 @@ button:hover,
 
 .social-icons {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   margin-top: 1.5rem;
   justify-content: center;
 }
